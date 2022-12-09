@@ -7,10 +7,12 @@ FINAL RESULTS AVAILABLE ON SHINY HERE: https://climatechoices.shinyapps.io/Arcti
 
 
 Objectives
+
 •	Assess how climate change may impact the viability/amount of days that people are able to travel on the land, ice, and water across Inuit Nunangat
 •	Better understand how the skill level of land users implicates their sensitivity to changes in trail conditions
 •	Assess where changes in trail use may be happening quickest and how global emissions scenarios will change impacts
 •	Assess how travel may be pushed to shift between trail types as environmental conditions change
+
 Approach
 Task 1: Develop daily timeseries of weather and ice conditions
 Assumptions/Limitations
@@ -28,11 +30,12 @@ Data preparation and timeseries creation
 e)	Daily temperature, precipitation, and wind timeseries based on average of all GCM grid cell within 100km radius of each community
 i)	Separate timeseries for each GCM (5) and RCP scenario (2)
 f)	Static visibility timeseries for each region based on a historic timeseries (length dependent on historic weather availability, no less than 5 year average & no greater than 30 year avg)
-i)	For each region, up to a decade of visibility data will be gathered from all communities. Years with poor data will be removed. 
-ii)	Using a random generator, we created a synthetic timeseries using the historic observations. We compared the histogram between historic and the generated visibility data to confirm similar distributions. Note that this approach assumed no autocorrelation.
+  i)	For each region, up to a decade of visibility data will be gathered from all communities. Years with poor data will be removed. 
+  ii)	Using a random generator, we created a synthetic timeseries using the historic observations. We compared the histogram between historic and the generated visibility data to confirm similar distributions. Note that this approach assumed no autocorrelation.
 g)	Sea ice concentration and sea ice thickness data came from CMIP6 gridded data. In order to ensure that there were enough points of observation for each region, the grid area was extended to a 150km radius around each community (see appendix map)
-i)	Grid cells sampled for regions:
+  i)	Grid cells sampled for regions:
 (1)	
+
 Task 2: Model the number of ‘good’ and ‘bad’ days for various land users and trail types
 Assumptions/Limitations
 a)	Future thresholds will not change from the present-day ranges
@@ -40,6 +43,7 @@ b)	Small adjustments were made to the thresholds used in Ford, 2019 to accommoda
 Adapting criteria from Ford, 2019
 c)	We will run the IF/THEN statement through the timeseries that is developed for each community (10 timeseries * 7 regions)
 d)	We will run 3 IF/THEN statements for each of the different ‘land user types’
+
 Task 3: Analyze temporal and spatial trends
 Assumptions/Limitations
 a)	Each GCM is internal to itself – a daily temperature produced by CanESM2 RCA4 is incongruous with the precipitation projected by another model that day
